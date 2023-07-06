@@ -8,11 +8,15 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
-
+    let preço = Number(prompt(`Informe o preço do produto`).trim());
     //Processamento
+
+    let MensagemFinal = (preço <= 280)? `o preço agora do produto sera ${(preço*1.20)}`
+:(preço <= 700)? `o preço agora do produto sera ${(preço*1.15).toFixed(2).replace(".",",")}`
+:(preço <= 1500)? `o preço agora do produto sera ${(preço*1.10).toFixed(2).replace(".",",")}`
+:`o preço do produto agora sera ${(preço*1.05).toFixed(2).replace(".",",") }`
 
     
     //Saída
-
+    alert(MensagemFinal)
 </script>

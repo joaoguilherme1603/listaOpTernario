@@ -6,12 +6,17 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const PL = parseInt(prompt(`Me informe o preço do litro da gasosa`).trim());
+    const LT = parseInt(prompt(`Me informe a quantidade de litros que voce gasta diariamente`).trim());
+    const PTP = parseInt(prompt(`Me informe o preço do transporte publico diariamente`).trim());
+    const DM = parseInt(prompt(`me informe quantos dias no mes vc trabalha`).trim());
 
     //Processamento
-
+    MensagemFinal = (PL*LT*DM < PTP*DM )? `Melhor ir de carro`
+    :`Melhor ir de onibus`
     
     //Saída
+    alert(MensagemFinal)
 
     
 </script>

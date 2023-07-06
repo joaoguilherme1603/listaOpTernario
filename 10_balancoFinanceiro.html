@@ -10,11 +10,20 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
-
+    const CA = Number(prompt(`Me informe a conta da agua`));
+    const CEE = Number(prompt(`Me informe a conta da energia eletrica`));
+    const CT = Number(prompt(`Me informe a conta de telefone`));
+    const SPM = Number(prompt(`Me informe a conta do supermercado`));
+    const Salario = Number(prompt(`Me informe o seu salario`));
+    
     //Processamento
+    const despesas = (CA+CEE+CT+SPM)
+
+MensagemFinal = (despesas > Salario)?`Voce esta gastando mais que ganha e falta $${despesas - Salario}`
+:(Salario > despesas)?`voce sabe administrar seu dinheiro e sobrou $${Salario-despesas}`
+:`valor invalido`
 
     
     //Saída
-    
+    alert(MensagemFinal)
 </script>

@@ -8,11 +8,16 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+    const HT = parseInt(prompt(`quanto voce recebe por hora?`).trim());
+    const RHT = parseInt(prompt(`quantas horas voce trabalha semanalmente?`).trim());
 
     //Processamento
-
+    let MensagemFinal = ( RTH <= 45)?`nao havera adicional`
+    :(RTH <= 60)?`seu novo salario semanal sera de ${(RTH*HT*1.20).toFixed(2).replace(".",",")}`
+    :`seu novo salario semanal sera de ${(RTH*HT*1.30).toFixed(2).replace(".",",")}`
     
     //Saída
+
+    alert(MensagemFinal `, e voce recebe ${(RHT/HT).toFixed(2).replace(".",",")} por hora`);
 
 </script>

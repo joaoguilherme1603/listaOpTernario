@@ -10,11 +10,16 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const Nota = (prompt(`me informe o porte do seu cao (M-medio, P-pequeno, G-grande)`).trim());
 
     //Processamento
+    let MensagemFinal = (Nota >= 9) ? `Voce tirou A`
+:(Nota >= 8) ? `Voce tirou B`
+:(Nota >= 7) ? `Voce tirou C`
+:(porte >= 6) ? `Voce tirou D`
+:`Voce tirou E`
 
     
     //Saída
-
+    alert(MensagemFinal)
 </script>
